@@ -129,6 +129,16 @@ footer {
         font-weight: bold;
         letter-spacing: 4px;
     }
+    footer {
+        background-color: #3B8686;
+        color: white;
+        text-align: center;
+        margin: 5px 0px 0px 0px;
+        padding: 5px 0px 0px 0px;
+        height: 110px;
+        width: 100%;
+    }
+    
 }
 /* MEDIA QUERY * ipad*/
 @media only screen and (min-width: 481px){
