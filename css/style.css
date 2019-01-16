@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica, Arial;
+    color: #525252;
+    }
 header {
     float: left;
     background-color: #79BD9A;
@@ -36,9 +40,17 @@ ul {
     list-style: none;
 }
 li {
-    display: block;
+    display: inline-block;
     /*float: left; essa linha não funciona com a linha acima*/
     padding: 10px;
+}
+footer {
+    background-color: #3B8686;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 10px 15px 10px;
+    border-radius: 5px;
 }
 /* MEDIA QUERY */
 @media only screen and (max-width: 640px){
@@ -61,11 +73,43 @@ li {
         padding: 10px 0px;
         margin: 0;
     }
-
-    nav:hover ul {
-        display: block;
-    }
     nav li a {
         color: #3B8686;
     }
+    nav:hover ul {
+        display: block;
+    }
+    p {
+        text-align: justify;
+        margin: 0;
+    }
+    .depoimentos {
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 5px;
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+        background: #e3e3e3;
+    }
+    nav#nav-footer {
+        display: none;
+        
+    }
+    #copyright h2 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    #copyright p {
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    
+
+
+
+
+
 }
