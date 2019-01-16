@@ -17,6 +17,7 @@ header p {
 }
 h2 {
     margin: 10px 0px;
+    text-align: center;
 }
 a {
     color: #FFF;
@@ -30,9 +31,9 @@ a:hover {
 }
 #logo {
     float: left;
-    width: 40%;
-    height: 40%;
     display: block;
+    width: 30%;
+    height: 100%;
 }
 nav {
     float: right;
@@ -48,7 +49,7 @@ ul {
     list-style: none;
 }
 li {
-    display: block;
+    display: inline-block;
     /*float: left; essa linha não funciona com a linha acima*/
     padding: 10px;
 }
@@ -60,13 +61,14 @@ footer {
     padding: 0px;
     height: 110px;
     width: 100%;
-    position: absolute;
 }
+
 /* MEDIA QUERY * iphone 5*/
 @media only screen and (max-width: 480px){
     #menu-icon{
         display: inline-block;
     }
+
     nav ul {
         display: none;
         position: absolute;
@@ -76,21 +78,25 @@ footer {
         background: #fff;
         width: 20%;
     }
+
     nav li{
         text-align: left;
         width: 100%;
         padding: 10px 0px;
         margin: 0;
     }
-    nav li a {
-        color: #3B8686;
-    }
+
     nav:hover ul {
         display: block;
     }
+
+    nav li a {
+        color: #3B8686;
+    }
+
     p {
         text-align: justify;
-        margin: 0;
+        margin: 10px 0px 20px 0px;
         padding: 10px;
     }
     section {
@@ -114,10 +120,102 @@ footer {
     #copyright p {
         font-size: 12px;
         text-align: center;
+        margin: 0px;
         padding-top: 10px;
         position: relative;
     }
+    #slogan {
+        margin-right: 10px;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
 }
-@media only screen and (min-width: 600px){
+/* MEDIA QUERY * ipad*/
+@media only screen and (min-width: 481px){
+    #menu-icon {
+        display: none;
+    }
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        height: 200px;
+        
+    }
+    section {
+        height: 250px;
+        margin: 0px;
+        padding: 0px;
+        clear: both;
+        text-align: justify;
+    
+    }
+    #prom1, #prom2 {
+        width: 48%;
+        float: left;
+        margin-left: 10px;
+    }
+    #gerais1, #gerais2, #gerais3 {
+        float: left;
+        width: 30%;
+        padding: 0px;
+        margin: 0px 0 10px 10px;
+    }
+    #gerais2 img {
+        display: block;
+        margin: auto;
+        
+
+    }
+    .depoimentos {
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 5px;
+        width: 47%;
+        float: left;
+        margin: 0px 0 15px 15px;
+        background: #e3e3e3;
+    }
+    .depoimentos p {
+        margin: 10px;
+    }
+    footer {
+        float: left;
+        height: 110px;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+        clear: both;
+    }
+
+    #copyright {
+        position: absolute;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 20px;
+        height: 0;
+        clear: both;
+    }
+            
+    #copyright h2 {
+        text-align: center;
+        margin: 20px 0px 0px 0px ;
+        position: relative;
+    }
+
+    #copyright p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0px;
+        padding-top: 10px;
+        position: relative;
+    }
+  
+    #slogan {
+        margin-right: 10px;
+        font-weight: bold;
+        letter-spacing: 7px;
+    }
+
 
 }
