@@ -1,0 +1,71 @@
+header {
+    float: left;
+    background-color: #79BD9A;
+    width: 100%
+}
+header p {
+    float: right;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #CFF09E;
+    background: #0B486B;
+    padding: 20px 5px;
+}
+#logo {
+    float: left;
+    width: 40%;
+    height: 40%;
+    display: block;
+}
+nav {
+    float: right;
+    padding: 20px;
+}
+#menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(../img/menu-icon.png) center;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: block;
+    /*float: left; essa linha não funciona com a linha acima*/
+    padding: 10px;
+}
+/* MEDIA QUERY */
+@media only screen and (max-width: 640px){
+    #menu-icon{
+        display: inline-block;
+        
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        padding: 20px;
+        background: #fff;
+        width: 20%;
+    }
+    nav li{
+        text-align: left;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+    nav li a {
+        color: #3B8686;
+    }
+}
